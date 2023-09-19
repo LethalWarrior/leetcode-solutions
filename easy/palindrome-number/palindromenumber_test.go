@@ -11,7 +11,21 @@ func TestIsPalindrome(t *testing.T) {
 		args args
 		want bool
 	}{
-		// TODO: Add test cases.
+		{
+			name: "should return true when given 121",
+			args: args{x: 121},
+			want: true,
+		},
+		{
+			name: "should return false when given -121",
+			args: args{x: -121},
+			want: false,
+		},
+		{
+			name: "should return false when given 10",
+			args: args{x: 10},
+			want: false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
