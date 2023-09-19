@@ -39,6 +39,30 @@ func TestTwoSum(t *testing.T) {
 			},
 			want: []int{0, 1},
 		},
+		{
+			name: "should return [0,1] when given [1,9,13,20,47] and 10",
+			args: args{
+				nums:   []int{1, 9, 13, 20, 47},
+				target: 10,
+			},
+			want: []int{0, 1},
+		},
+		{
+			name: "should return [0,4] when given [3,2,4,1,9] and 12",
+			args: args{
+				nums:   []int{3, 2, 4, 1, 9},
+				target: 12,
+			},
+			want: []int{0, 4},
+		},
+		{
+			name: "should return [] when given [] and 10",
+			args: args{
+				nums:   []int{},
+				target: 10,
+			},
+			want: []int{},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
