@@ -1,4 +1,4 @@
-package easy
+package twosum
 
 func TwoSum(nums []int, target int) []int {
 	diffs := map[int]int{}
