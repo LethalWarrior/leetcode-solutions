@@ -1,4 +1,4 @@
-# Palindrome Number
+# Valid Palindrome
 
 ## Problem Description
 
