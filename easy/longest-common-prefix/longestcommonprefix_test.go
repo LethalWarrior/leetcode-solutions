@@ -11,7 +11,16 @@ func TestLongestCommonPrefix(t *testing.T) {
 		args args
 		want string
 	}{
-		// TODO: Add test cases.
+		{
+			name: `should return "fl" when given ["dog","racecar","car"]`,
+			args: args{strs: []string{"flower", "flow", "flight"}},
+			want: "fl",
+		},
+		{
+			name: `should return "fl" when given ["dog","racecar","car"]`,
+			args: args{strs: []string{"dog", "racecar", "car"}},
+			want: "",
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
