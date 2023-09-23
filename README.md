@@ -19,4 +19,4 @@ go to the problem that you wanna see, and run `go test -v` on the _terminal_.You
 
 ## Note
 
-> Please keep in mind that my solutions is not the optimized one. You may find the ones that are optimized in term of _time complexity_ and _space complexity_ while also applied _clean code principles_. However, feel free to give suggestions to me :). I may update the solutions here with the better ones later on.
+> Please keep in mind that my solutions are not the optimized one. You may find the ones that are optimized in term of _time complexity_ and _space complexity_ while also applied _clean code principles_ somewhere out there. However, feel free to give suggestions to me as I may update the solutions here with the better ones later on :).
