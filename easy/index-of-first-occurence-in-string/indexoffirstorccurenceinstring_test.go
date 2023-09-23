@@ -12,7 +12,16 @@ func TestStrStr(t *testing.T) {
 		args args
 		want int
 	}{
-		// TODO: Add test cases.
+		{
+			name: `should return 0 when given haystack = "leetcode", needle = "leeto"`,
+			args: args{haystack: "leetcode", needle: "leeto"},
+			want: -1,
+		},
+		{
+			name: `should return 0 when given haystack = "sadbutsad", needle = "sad"`,
+			args: args{haystack: "sadbutsad", needle: "sad"},
+			want: 0,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
