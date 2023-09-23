@@ -1,5 +1,17 @@
 package lengthoflastword
 
 func LengthOfLastWord(s string) int {
-	return 1
+	i := len(s) - 1
+
+	for i >= 0 && s[i] == ' ' {
+		i -= 1
+	}
+
+	lastIdx := i
+
+	for i >= 0 && s[i] != ' ' {
+		i -= 1
+	}
+
+	return lastIdx - i
 }
