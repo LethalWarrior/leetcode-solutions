@@ -1,5 +1,12 @@
 package removeelement
 
 func RemoveElement(nums []int, val int) int {
-	return 0
+	k := 0
+	for _, num := range nums {
+		if num != val {
+			nums[k] = num
+			k++
+		}
+	}
+	return k
 }
